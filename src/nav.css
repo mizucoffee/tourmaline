@@ -1,0 +1,51 @@
+nav {
+  background-color: var(--theme-color, #cccccc);
+  color: white;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  filter: drop-shadow(0px 4px 6px #00000044);
+}
+
+nav::before {
+  content: var(--title, "title");
+  font-size: 18pt;
+  line-height: 1em;
+  font-weight: 700;
+  margin-right: 16px;
+}
+
+nav::after {
+  content: var(--type);
+  font-size: 9pt;
+  border: solid 1px white;
+  padding: 2px 8px;
+  margin-left: auto;
+  justify-self: end;
+}
+
+nav h1 {
+  font-size: 18pt;
+  line-height: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    var(--theme-color);
+}
